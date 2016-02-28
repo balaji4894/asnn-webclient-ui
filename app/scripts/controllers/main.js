@@ -30,7 +30,7 @@ angular.module('asnnWebclientUiApp')
 			$scope.model.result=response;
 		});
 */
-		var url = 'https://stormy-brushlands-60910.herokuapp.com/query?q="Korattur Chennai"';
+		var url = 'https://stormy-brushlands-60910.herokuapp.com/query?q=Korattur Chennai';
 			$http({
 			    method: 'JSONP',
 			    url: url
