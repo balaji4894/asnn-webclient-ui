@@ -17,10 +17,7 @@
         </div>
       </div>  
     </div>
-    {{model.querystring}}
-  </div>  
   </div>
-
   <div class="row" ng-if="model.result.status">
     <div class="col-md-12 form-group">
       <div class="col-md-12">
@@ -29,8 +26,21 @@
             Your search Results ... 
           </div>
           <div class="panel-body">
-            <div class="col-md-10">
-               {{model.result}}
+            <div class="col-md-12">
+               <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="col-md-2">Results #</th>
+                    <th class="col-md-10">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="res in model.result.result">
+                    <td>{{$index}}</td>
+                    <td>{{res[0]}}</td>
+                  </tr>   
+                </tbody>
+               </table>
             </div>
             <div class="col-md-2">
               
@@ -39,12 +49,12 @@
         </div>
       </div>  
     </div>
-  </div>  
-  </div>
-  
-  
+  </div>    
 </div>
 
-<div class="row marketing">
+  
+  
+  
+  
 
-</div>
+

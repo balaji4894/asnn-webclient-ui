@@ -25,12 +25,12 @@ angular.module('asnnWebclientUiApp')
 
 	$scope.submitQuery=function(query)
 	{
-		/*$http.get('https://stormy-brushlands-60910.herokuapp.com/query?q="Korattur Chennai"')
+		$http.get('https://stormy-brushlands-60910.herokuapp.com/query?q="'+$scope.model.querystring+'"')
 		.success(function(response){
 			$scope.model.result=response;
 		});
-*/
-		var url = 'https://stormy-brushlands-60910.herokuapp.com/query?q=Korattur Chennai';
+
+		/*var url = 'https://stormy-brushlands-60910.herokuapp.com/query?q=Korattur Chennai';
 			$http({
 			    method: 'JSONP',
 			    url: url
@@ -43,6 +43,6 @@ angular.module('asnnWebclientUiApp')
 			}).
 			error(function(status) {
 			    //your code when fails
-			});
+			});*/
 		};
   });
